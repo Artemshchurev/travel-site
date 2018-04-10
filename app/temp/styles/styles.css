@@ -1082,7 +1082,7 @@ Instead edit gulp/templates/sprite */
   transition: background-color .3s ease-out;
 }
 
-.site-header--is-expanded{
+.site-header--is-expanded {
   background-color: rgba(47,85,114, .55);
 }
 
@@ -1131,7 +1131,7 @@ Instead edit gulp/templates/sprite */
   right: 10px;
 }
 
-.site-header__menu-icon::before{
+.site-header__menu-icon::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1143,7 +1143,7 @@ Instead edit gulp/templates/sprite */
   transition: transform .3s ease-out;
 }
 
-.site-header__menu-icon__middle{
+.site-header__menu-icon__middle {
   position: absolute;
   top: 8px;
   left: 0;
@@ -1154,7 +1154,7 @@ Instead edit gulp/templates/sprite */
   transform-origin: 0 50%;
 }
 
-.site-header__menu-icon::after{
+.site-header__menu-icon::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1173,16 +1173,16 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-.site-header__menu-icon--close-x::before{
+.site-header__menu-icon--close-x::before {
   transform: rotate(45deg) scaleX(1.25);
 }
 
-.site-header__menu-icon--close-x .site-header__menu-icon__middle{
+.site-header__menu-icon--close-x .site-header__menu-icon__middle {
   opacity: 0;
   transform: scaleX(0);
 }
 
-.site-header__menu-icon--close-x::after{
+.site-header__menu-icon--close-x::after {
   transform: rotate(-45deg) scaleX(1.25) translateY(1px);
 }
 
@@ -1206,7 +1206,7 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-.site-header__menu-content--is-visible{
+.site-header__menu-content--is-visible {
   opacity: 1;
   z-index: 1;
   transform: scale(1);
@@ -1256,7 +1256,7 @@ Instead edit gulp/templates/sprite */
   }
 }
 
-.primary-nav li:last-child{
+.primary-nav li:last-child {
   padding-right: 0;
 }
 
@@ -1284,4 +1284,15 @@ Instead edit gulp/templates/sprite */
     padding: 12px 0;
     background-color: transparent;
   }
+}
+
+.reveal-item {
+  opacity: 0;
+  transition: all 1.5s ease-out;
+  transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+  opacity: 1;
+  transform: scale(1);
 }

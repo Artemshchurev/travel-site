@@ -5,16 +5,16 @@
   z-index: 2;
   transition: background-color .3s ease-out;
 
-  &--is-expanded{
+  &--is-expanded {
     background-color: rgba($mainBlue, .55);
   }
-
+  
   @mixin atMedium {
     background-color: rgba($mainBlue, .3);
   }
 
   &__btn-container {
-    @mixin atMedium{
+    @mixin atMedium {
       float: right;
     }
   }
@@ -46,7 +46,7 @@
     top: 10px;
     right: 10px;
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -58,7 +58,7 @@
       transition: transform .3s ease-out;
     }
 
-    &__middle{
+    &__middle {
       position: absolute;
       top: 8px;
       left: 0;
@@ -69,7 +69,7 @@
       transform-origin: 0 50%;
     }
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -86,17 +86,17 @@
     }
   }
 
-  &__menu-icon--close-x{
-    &::before{
+  &__menu-icon--close-x {
+    &::before {
       transform: rotate(45deg) scaleX(1.25);
     }
 
-    .site-header__menu-icon__middle{
+    .site-header__menu-icon__middle {
       opacity: 0;
       transform: scaleX(0);
     }
 
-    &::after{
+    &::after {
       transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
   }
@@ -117,7 +117,7 @@
       transform: scale(1);
     }
 
-    &--is-visible{
+    &--is-visible {
       opacity: 1;
       z-index: 1;
       transform: scale(1);
