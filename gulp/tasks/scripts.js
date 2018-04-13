@@ -1,9 +1,9 @@
-const gulp = require('gulp'),
-webpack = require('webpack');;
+var gulp = require('gulp'),
+webpack = require('webpack');
 
-gulp.task('scripts', function (callback) {
-  webpack(require('../../webpack.config.js'), function (err, stats) {
-    if(err){
+gulp.task('scripts', ['modernizr'], function(callback) {
+  webpack(require('../../webpack.config.js'), function(err, stats) {
+    if (err) {
       console.log(err.toString());
     }
 
